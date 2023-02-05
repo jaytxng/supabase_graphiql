@@ -1,0 +1,39 @@
+{
+  "name": "supabase_graphiql",
+  "version": "1.0.0",
+  "description": "Minimal tool to use GraphiQL for your Supabase project",
+  "main": "",
+  "scripts": {
+    "start": "vite & open http://127.0.0.1:5173/",
+    "preview": "vite preview",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaytxng/supabase_graphiql.git"
+  },
+  "keywords": [
+    "supabase",
+    "graphiql",
+    "graphql",
+    "schema",
+    "explorer",
+    "interactive"
+  ],
+  "dependencies": {
+    "graphql": "^16.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "graphiql": "2.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-nano-react-app": "^0.1.0",
+    "vite": "^3.2.1"
+  },
+  "author": "Jay Tong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaytxng/supabase_graphiql/issues"
+  },
+  "homepage": "https://github.com/jaytxng/supabase_graphiql#readme"
+}
