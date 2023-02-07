@@ -5,7 +5,7 @@
   🔍 Minimal tool to use GraphiQL for your Supabase project.
 </p>
 <p align="center">
-  <img alt="nano logo" src="https://badge.fury.io/js/supabase_graphiql.svg" width="128">
+  <img alt="" src="https://badge.fury.io/js/supabase_graphiql.svg" width="128">
 </p>
 
 ## Setup in `app.jsx`
