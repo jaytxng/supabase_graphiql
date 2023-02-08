@@ -2,7 +2,7 @@
   <img alt="nano logo" src="./static/logo.png" width="64">
 </p>
 <p align="center">
-  🔍 Minimal tool to use GraphiQL for your Supabase project.
+  🔍 No server setup to use GraphiQL for your Supabase DB.
 </p>
 <p align="center">
   <img alt="" src="https://badge.fury.io/js/supabase_graphiql.svg" width="128">
