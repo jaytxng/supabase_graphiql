@@ -5,7 +5,7 @@
   🔍 No server setup to use GraphiQL for your Supabase DB.
 </p>
 <p align="center">
-  <img alt="" src="https://badge.fury.io/js/supabase_graphiql.svg" width="128">
+  <img alt="nano logo" src="https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&r=r&type=6e&v=1.0.2&x2=0" width="128">
 </p>
 
 ## Setup in `app.jsx`

@@ -1,6 +1,6 @@
 {
   "name": "supabase_graphiql",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Minimal tool to use GraphiQL for your Supabase project",
   "main": "",
   "scripts": {
