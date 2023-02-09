@@ -5,15 +5,35 @@ import ReactDOM from "react-dom";
 
 import "graphiql/graphiql.css";
 
-const projectID = "YOUR_SUPABASE_PROJECT_ID";
-const apiKey = "YOUR_SUPABASE_API_KEY";
-const accessToken = "YOUR_ACCESS_TOKEN";
+// Will use AUTHENTICATED role by default but if you comment it out in `info`, it'll default to
+// empty string which is equivalent to ANON role.
+
+const info = {
+  // Get local info from supabase cli with command `supabase status`
+  local: {
+    projectURL: "http://localhost:54321/graphql/v1",
+    apiKey: "<LOCAL_API_KEY>",
+    accessToken: "<ACCESS_TOKEN>",
+  },
+  staging: {
+    projectURL: "https://<SUPABASE_PROJECT_ID>.supabase.co/graphql/v1",
+    apiKey: "<REMOTE_API_KEY>",
+    accessToken: "<ACCESS_TOKEN>",
+  },
+  production: {
+    projectURL: "https://<SUPABASE_PROJECT_ID>.supabase.co/graphql/v1",
+    apiKey: "<REMOTE_API_KEY>",
+    accessToken: "<ACCESS_TOKEN>",
+  },
+};
+
+const stage = "local";
 
 const fetcher = createGraphiQLFetcher({
-  url: `https://${projectID}.supabase.co/graphql/v1`,
+  url: info[stage].projectURL,
   headers: {
-    apiKey,
-    Authorization: `Bearer ${accessToken}`,
+    apiKey: info[stage].apiKey,
+    Authorization: `Bearer ${info[stage].accessToken || ""}`,
   },
 });
 
